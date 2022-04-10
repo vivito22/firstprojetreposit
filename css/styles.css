@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+   background-color: black ;
+   display: grid;
+   grid-template-columns: repeat(10,1fr);
+   align-items: center;
+}
+
+.navbar .logo {
+    width: 150px;
+    height: 45px;
+    grid-column: 2 / 3; 
+    cursor: pointer;   
+}
+
+
+.navbar .menu {
+    grid-column: 4 / 9;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+     list-style: none;
+}
+
+.navbar .menu li a{
+    text-decoration: none;
+    color: gold;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: white
+}
+
+/* ANIMACION MENU: LINEA QUE SUBRAYA POR ARRIBA CUANDO PASO X MENU
+
+nav ul li a::before {
+    display: block;
+    width: 0%;
+    background: white;
+    height: 3px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+     width: 100%;
+} 
+
+*/
+
+
+.navbar .menu-bar{
+    display: none;
+}
+
+.navbar .wa {
+     grid-column: 10;
+     color: gold;
+     margin-left: 10px;
+     cursor: pointer;
+}
+
+.navbar .wa a:hover{
+    color: white
+}
+
+/* SECTION MAIN*/
+.hero {
+    height: 87vh;
+    background-image:  url(../img/flowers-interior-room-home.jpg);
+    background-size: cover;
+    max-width:100% ;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat( 8,1fr);
+    position: relative;
+}
+
+.hero .info-content {
+     grid-column: 4 / 8;
+     grid-row: 4 / 7;
+     color: white;
+     z-index: 1;
+}
+
+.hero .info-content h1 {
+    font-size: 3em;
+    color: gold;
+    text-align: center;
+}
+
+.hero .info-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero .info-content p{
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.hero .info-content .btn {
+    font-size: 1em;
+    background: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid gold;
+    border-radius: 15px;
+    margin-top: 10px; 
+  
+}
+
+.hero .info-content .btn:hover {
+    background-color: gold;
+    color: black;
+}
+
+.hero .info-content .btn-centro {
+    display: grid;
+    place-content: center; 
+}
+
+
+/*FOOTER*/
+
+.footer {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    grid-template-areas: 
+    "listen-online escucha social-media";
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer .listen-online {
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    background-color: gold;
+    padding: 28px;
+    color: black;
+}
+
+.footer .listen-online .fa-solid  {
+    font-size: 1.5em;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer .escucha {
+    grid-template-areas: escucha;
+    text-align: center;
+}
+
+.footer .social-media {
+    grid-template-areas: social-media;
+    font-size: 1.3em;
+
+}
+
+.footer .social-media .fa-brands  {
+   margin-right: 15px;
+   color: gold;
+
+}
+
+.footer .social-media .fa-brands:hover  {
+   color: white;    
+ }
+
+ /* SERVICIOS*/
+
+  .grid-container {
+    height: 87vh;
+    background-image:  url(../img/flowers-interior-room-home.jpg);
+    background-size: cover;
+    max-width:100% ;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat( 4,1fr);
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "box1 box2 box3 box4";
+    grid-area: grid-container;
+    position: relative;
+}
+
+.box1{
+    grid-area: box1;
+    background-color: gold;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+    
+.box2{
+    grid-area: box2;
+    background-color: gold;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.box3{
+    grid-area: box3;
+    background-color: gold;
+    text-align: center;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.box4{
+    grid-area: box4;
+    background-color: gold;
+    text-align: center;
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.grid-container .whiteText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    
+}
+
+.grid-container .textImagen {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.grid-container .imagen1 {
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px ;
+    margin-top: 15px;
+}

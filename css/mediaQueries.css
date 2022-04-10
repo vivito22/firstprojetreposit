@@ -1,0 +1,85 @@
+@media only screen and (max-width: 600px) {
+
+
+/*SECTION NAV*/
+    .navbar {
+        background-color: black;
+        position: relative;
+      }
+
+        
+      .navbar .wa {
+          display: none;
+      }
+      
+      .navbar .menu-bar {
+           display: block;
+           grid-column: 10;
+           font-size: 2em;
+           cursor: pointer;
+           color: gold;
+      }
+      
+
+      .navbar .menu {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: black;
+        transform: translateX(160%);
+        transition: all 1s;
+        margin-top: 40em;
+        z-index: 1;
+      } 
+
+      .navbar .menu-toggle {
+          transform: translateX(50%);
+
+      }
+
+/*SECTION MAIN*/
+
+.hero .info-content {
+    grid-column: 3 / 9;
+    grid-row: 5 / 5;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+}
+
+/* FOOTER*/
+
+.footer .escucha {
+    display: none;
+}
+
+.footer .social-media {
+    text-align: right;
+
+}
+/* SERVICIOS*/
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    position: static;
+   
+
+
+}
+        
+
+
+
+
+}    
+
+    
