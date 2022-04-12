@@ -131,8 +131,15 @@ nav ul li a:hover::before {
 }
 
 .hero .info-content .btn:hover {
-    background-color: gold;
+    background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
     color: black;
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+.hero .info-content .btn:active {
+    transform: translateY(3px);
 }
 
 .hero .info-content .btn-centro {
