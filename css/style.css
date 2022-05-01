@@ -1,0 +1,99 @@
+.navbar {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 45px;
+  grid-column: 2/3;
+  cursor: pointer;
+}
+
+.menu {
+  grid-column: 4/9;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+}
+
+.hero {
+  height: 87vh;
+  background-image: url(../img/flowers-interior-room-home.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative;
+}
+
+.info-content {
+  grid-column: 4/8;
+  grid-row: 4/7;
+  color: white;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3em;
+  color: gold;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.btn {
+  font-size: 1em;
+  background: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid gold;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  color: black;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
+
+.btn-centro {
+  display: grid;
+  place-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
