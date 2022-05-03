@@ -7,12 +7,11 @@
         position: relative;
       }
 
-        
-      .navbar .wa {
+    .navbar .wa {
           display: none;
       }
       
-      .navbar .menu-bar {
+    .navbar .menu-bar {
            display: block;
            grid-column: 10;
            font-size: 2em;
@@ -66,11 +65,11 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
     margin-left: 80px;
     margin-right: 80px;
     position: static;
+    margin-bottom: auto;
    
 
 
@@ -80,6 +79,6 @@
 
 
 
-}    
+}   
 
     
