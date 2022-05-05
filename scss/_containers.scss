@@ -1,7 +1,9 @@
 /*MAIN - CONTAINERS*/
+
+
 @mixin contenedor {
     height: 87vh;
-    background-image: $backgound-image;
+    background-image: url(../img/flowers-interior-room-home.jpg);
     background-size: cover;
     max-width:100% ;
     display: grid;

@@ -31,6 +31,10 @@
                 text-decoration: none;
                 color: gold;
                 cursor: pointer;    
+
+                &:hover{
+                    color: white
+                }
             
             }
         
@@ -38,7 +42,5 @@
  }    
 
 
-    &:hover{
-        color: white
-    }
+   
 
