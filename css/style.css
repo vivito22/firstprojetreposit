@@ -20,7 +20,7 @@
 }
 .menu li {
   list-style: none;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .menu li a {
   text-decoration: none;
@@ -42,11 +42,90 @@
   grid-template-rows: repeat(8, 1fr);
   position: relative;
 }
-.grid-container .info-content {
+.grid-container .infoContent {
   grid-column: 4/8;
   grid-row: 4/7;
   color: white;
   z-index: 1;
+}
+
+.grid-box {
+  height: 87vh;
+  background-image: url(../img/flowers-interior-room-home.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 16px 16px;
+  grid-auto-flow: row;
+  grid-template-areas: "box1 box2 box3 box4";
+  grid-area: grid-box;
+  position: relative;
+}
+.grid-box .box1 {
+  grid-area: box1;
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  text-align: center;
+  grid-column: 3;
+  grid-row: 2;
+}
+.grid-box .box1:hover {
+  background-image: gold;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.grid-box .box1:hover .box1:active {
+  transform: translateY(3px);
+}
+.grid-box .box2 {
+  grid-area: box2;
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  text-align: center;
+  grid-column: 4;
+  grid-row: 2;
+}
+.grid-box .box2:hover {
+  background-image: gold;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.grid-box .box2:hover .box1:active {
+  transform: translateY(3px);
+}
+.grid-box .box3 {
+  grid-area: box3;
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  text-align: center;
+  grid-column: 5;
+  grid-row: 2;
+}
+.grid-box .box3:hover {
+  background-image: gold;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.grid-box .box3:hover .box1:active {
+  transform: translateY(3px);
+}
+.grid-box .box4 {
+  grid-area: box4;
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  text-align: center;
+  grid-column: 6;
+  grid-row: 2;
+}
+.grid-box .box4:hover {
+  background-image: gold;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.grid-box .box4:hover .box1:active {
+  transform: translateY(3px);
 }
 
 /*MAPS*/
@@ -62,6 +141,7 @@
   color: gold;
 }
 
+/*TITULOS Y PARRAFOS*/
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -69,17 +149,27 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+  font-size: 1rem;
   font-weight: 300;
   text-align: center;
 }
 
 p {
+  font-size: 0.8 rem;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*BTN INDEX*/

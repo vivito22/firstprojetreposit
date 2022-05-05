@@ -9,6 +9,18 @@
     display: grid;
 }
 
+@mixin boxes {
+    background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+    text-align: center;
+}
+
+@mixin boxeshover {
+    background-image: gold;
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    
+}
 
 .grid-container {
     @include contenedor();
@@ -16,10 +28,92 @@
     grid-template-rows: repeat( 8,1fr);
     position: relative;
 
-    .info-content {
+    .infoContent {
         grid-column: 4 / 8;
         grid-row: 4 / 7;
         color: white;
         z-index: 1;
+        
    }
 }
+
+.grid-box {
+    @include contenedor ();
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat( 4,1fr);
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "box1 box2 box3 box4";
+    grid-area: grid-box;
+    position: relative;
+    
+        .box1{
+            grid-area: box1;
+            @include boxes() ;
+            grid-column: 3;
+            grid-row: 2;
+
+            &:hover {
+            @include boxeshover();              
+
+            .box1:active {
+                    transform: translateY(3px);
+                }
+                
+            }
+        }
+    
+        .box2{
+            grid-area: box2;
+            @include boxes() ;
+            grid-column: 4;
+            grid-row: 2;
+
+            &:hover {
+            @include boxeshover();              
+
+            .box1:active {
+                    transform: translateY(3px);
+                }
+                
+            }
+        }
+
+        .box3{
+            grid-area: box3;
+            @include boxes() ;
+            grid-column: 5;
+            grid-row: 2;
+
+            &:hover {
+            @include boxeshover();              
+
+            .box1:active {
+                    transform: translateY(3px);
+                }
+                
+            }
+        }
+        .box4{
+            grid-area: box4;
+            @include boxes() ;
+            grid-column: 6;
+            grid-row: 2;
+
+            &:hover {
+            @include boxeshover();              
+
+            .box1:active {
+                    transform: translateY(3px);
+                }
+                
+            }
+        }
+
+
+
+
+
+    }
+
