@@ -67,6 +67,7 @@
   grid-area: box1;
   background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
   text-align: center;
+  border-radius: 5px;
   grid-column: 3;
   grid-row: 2;
 }
@@ -83,6 +84,7 @@
   grid-area: box2;
   background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
   text-align: center;
+  border-radius: 5px;
   grid-column: 4;
   grid-row: 2;
 }
@@ -99,6 +101,7 @@
   grid-area: box3;
   background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
   text-align: center;
+  border-radius: 5px;
   grid-column: 5;
   grid-row: 2;
 }
@@ -115,6 +118,7 @@
   grid-area: box4;
   background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
   text-align: center;
+  border-radius: 5px;
   grid-column: 6;
   grid-row: 2;
 }
@@ -170,6 +174,17 @@ p {
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.whiteText {
+  font-size: 1 rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.imagen1 {
+  border-radius: 20px;
 }
 
 /*BTN INDEX*/
