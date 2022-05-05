@@ -1,60 +1,16 @@
 @import "tipografia";
 @import "variables";
+@import "header";
+@import "background";
+@import "containers";
 
-.navbar {
-    background-color: black ;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    align-items: center;
-    }
-    
-
-.logo {
-        width: 150px;
-        height: 45px;
-        grid-column: 2 / 3; 
-        cursor: pointer;   
-    }
-
-.menu {
-        grid-column: 4 / 9;
-        display: flex;
-        justify-content: space-around;
-}    
-
-li {
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: gold;
-    cursor: pointer; 
-     
-}
-
-a:hover{
-    color: white
-}
+$margin: 0;
+$padding: 0;
+$box-sizing: border-box;
 
 
-.hero {
-    height: 87vh;
-    background-image: url(../img/flowers-interior-room-home.jpg);
-    background-size: cover;
-    max-width:100% ;
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat( 8,1fr);
-    position: relative;
-}
 
-.info-content {
-     grid-column: 4 / 8;
-     grid-row: 4 / 7;
-     color: white;
-     z-index: 1;
-}
+
 
  h1 {
     font-size: 3em;
@@ -69,7 +25,7 @@ a:hover{
     text-align: center;
 }
 
- p{
+p{
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -83,15 +39,15 @@ a:hover{
     border: 1px solid gold;
     border-radius: 15px;
     margin-top: 10px; 
-  
-}
 
-.btn:hover {
-    background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
-    color: black;
-    cursor: pointer;
-    transform: translateY(-3px);
-    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+   &:hover {
+        background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+        color: black;
+        cursor: pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+  
 }
 
  .btn:active {

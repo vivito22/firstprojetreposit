@@ -1,0 +1,44 @@
+/*BODY - HEADER*/
+
+
+
+
+.navbar {
+    background-color: $color-navbar;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+
+    .logo {
+        width: 150px;
+        height: 45px;
+        grid-column: 2 / 3; 
+        cursor: pointer;   
+    }
+}
+    
+
+.menu {
+        grid-column: 4 / 9;
+        display: flex;
+        justify-content: space-around;
+        
+        li {
+            list-style: none;
+            font-family: sans-serif;
+            
+            a{
+                text-decoration: none;
+                color: gold;
+                cursor: pointer;    
+            
+            }
+        
+     }
+ }    
+
+
+    &:hover{
+        color: white
+    }
+
