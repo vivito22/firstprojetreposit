@@ -84,7 +84,7 @@
 }
 .grid-box .box1 {
   grid-area: box1;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 3;
   grid-row: 2;
@@ -100,7 +100,7 @@
 }
 .grid-box .box2 {
   grid-area: box2;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 4;
   grid-row: 2;
@@ -116,7 +116,7 @@
 }
 .grid-box .box3 {
   grid-area: box3;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 5;
   grid-row: 2;
@@ -132,7 +132,7 @@
 }
 .grid-box .box4 {
   grid-area: box4;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 6;
   grid-row: 2;
@@ -163,7 +163,7 @@
 }
 .grid-nosotros .persona1 {
   grid-area: persona1;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 3/5;
   grid-row: 2;
@@ -179,7 +179,7 @@
 }
 .grid-nosotros .persona2 {
   grid-area: persona2;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 6/8;
   grid-row: 2;
@@ -195,7 +195,7 @@
 }
 .grid-nosotros .persona3 {
   grid-area: persona3;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 3/5;
   grid-row: 3;
@@ -211,7 +211,7 @@
 }
 .grid-nosotros .persona4 {
   grid-area: persona4;
-  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, rgba(255, 220, 103, 0.0156862745));
   text-align: center;
   grid-column: 6/8;
   grid-row: 3;
