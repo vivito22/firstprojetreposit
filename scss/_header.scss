@@ -16,6 +16,9 @@
         cursor: pointer;   
 
     }
+
+  
+
 }
     
 
@@ -43,5 +46,28 @@
  }    
 
 
-   
+ .menu-bar{
+    display: none;
+
+    .fa-solid  {
+        font-size: 1.5em;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+        
+}
+
+.wa {
+    grid-column: 10;
+    color: gold;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover{
+        color: white
+    }
+    
+}
+
+
 

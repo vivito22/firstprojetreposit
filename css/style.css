@@ -31,6 +31,25 @@
   color: white;
 }
 
+.menu-bar {
+  display: none;
+}
+.menu-bar .fa-solid {
+  font-size: 1.5em;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.wa {
+  grid-column: 10;
+  color: gold;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.wa:hover {
+  color: white;
+}
+
 /*MAIN - CONTAINERS*/
 .grid-container {
   height: 87vh;
