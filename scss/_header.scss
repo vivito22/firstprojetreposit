@@ -12,7 +12,6 @@
     .logo {
         width: 150px;
         height: 45px;
-        grid-column: 2 / 3; 
         cursor: pointer;   
 
     }
@@ -21,6 +20,10 @@
 
 }
     
+.logoArgen {
+    grid-column: 3 / 4; 
+    
+}
 
 .menu {
         grid-column: 4 / 9;
@@ -36,9 +39,7 @@
                 color: gold;
                 cursor: pointer;    
 
-                &:hover{
-                    color: white
-                }
+        
             
             }
         

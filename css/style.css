@@ -9,8 +9,11 @@
 .navbar .logo {
   width: 150px;
   height: 45px;
-  grid-column: 2/3;
   cursor: pointer;
+}
+
+.logoArgen {
+  grid-column: 3/4;
 }
 
 .menu {
@@ -26,9 +29,6 @@
   text-decoration: none;
   color: gold;
   cursor: pointer;
-}
-.menu li a:hover {
-  color: white;
 }
 
 .menu-bar {
