@@ -320,10 +320,10 @@ h3 {
 }
 
 p {
-  font-size: 0.8 rem;
-  font-weight: 300;
+  font-size: 0.8rem;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
-  text-align: center;
+  text-align: left;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -337,6 +337,13 @@ p {
 
 .imagen1 {
   border-radius: 20px;
+}
+
+a {
+  color: gold;
+}
+a:hover {
+  color: white;
 }
 
 /*BTN INDEX*/
