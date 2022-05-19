@@ -40,6 +40,22 @@
 
 /*SECTION MAIN*/
 
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+
+}
+
 .hero .info-content {
     grid-column: 3 / 9;
     grid-row: 5 / 5;
@@ -48,6 +64,7 @@
 .hero h1 {
     font-size: 3.5em;
 }
+
 
 /* FOOTER*/
 
