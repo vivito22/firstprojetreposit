@@ -51,21 +51,61 @@
 }
 
 /*MAIN - CONTAINERS*/
-.grid-container {
-  height: 87vh;
-  background-image: url(../img/flowers-interior-room-home.jpg);
-  background-size: cover;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+.hero {
+  width: 100%;
+  height: 85vh;
+  background-image: linear-gradient(90deg, rgba(6, 6, 6, 0.6839110644) 0%, rgba(101, 101, 101, 0.2973564426) 91%, rgba(144, 144, 144, 0.3673844538) 100%);
   position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.grid-container .infoContent {
-  grid-column: 4/8;
-  grid-row: 4/7;
+
+.infoContent {
+  text-align: center;
+}
+.infoContent .titleIndex {
+  font-size: 150px;
+  color: gold;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.infoContent .titleIndex:hover {
+  -webkit-text-stroke: 2px gold;
+  color: transparent;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.infoContent .btn {
+  font-size: 1em;
+  background: none;
   color: white;
-  z-index: 1;
+  padding: 10px 20px;
+  border: 1px solid gold;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.infoContent .btn .btn:hover {
+  background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc67);
+  color: black;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.infoContent .btn .btn:active {
+  transform: translateY(3px);
+}
+
+.btn-centro {
+  display: grid;
+  place-content: center;
 }
 
 .grid-box {
@@ -315,25 +355,24 @@
   color: gold;
 }
 
-/*TITULOS Y PARRAFOS*/
 body {
   margin: 0;
 }
 
+/*TITULOS Y PARRAFOS*/
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
   color: white;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
   text-shadow: -2px -2px 2px rgb(26, 24, 24);
 }
-
-.titleIndex {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+h1 .titleIndex {
+  font-size: 2rem;
   color: gold;
   text-align: center;
+  padding-top: 100px;
 }
 
 .title {
@@ -342,15 +381,26 @@ h1 {
 }
 
 .title2 {
+  padding-top: 10px;
   grid-column: 4/6;
   grid-row: 1;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  text-shadow: -2px -2px 2px rgb(26, 24, 24);
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
+  color: rgb(7, 7, 7);
 }
 
 p {
