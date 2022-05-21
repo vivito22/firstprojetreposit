@@ -12,11 +12,13 @@
 @mixin boxes {
     background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc6704);
     text-align: center;
+    border-radius: 10px;
     
 }
 
 @mixin boxeshover {
     background-image: gold;
+    border-radius: 10px;
     cursor: pointer;
     transform: translateY(-10px);
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
@@ -27,10 +29,10 @@
 
 .hero {
     width: 100%;
-    height: 85vh;
+    height: 88vh;
     background-image: linear-gradient(90deg, rgba(6,6,6,0.6839110644257703) 0%, rgba(101,101,101,0.29735644257703087) 91%, rgba(144,144,144,0.36738445378151263) 100%);
     position: relative;
-    padding: 0 5%;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +78,7 @@
             color: white;
             padding: 10px 20px;
             border: 1px solid gold;
-            border-radius: 15px;
+            border-radius: 100 px;
             margin-top: 10px; 
 
             .btn:hover {
@@ -221,7 +223,7 @@
         .persona2{
             grid-area: persona2;
             @include boxes() ;
-            grid-column: 6 / 8;
+            grid-column: 5 / 7;
             grid-row: 2;
 
             &:hover {
@@ -253,7 +255,7 @@
         .persona4{
             grid-area: persona4;
             @include boxes() ;
-            grid-column: 6 / 8 ;
+            grid-column: 5 / 7 ;
             grid-row: 3;
 
             &:hover {
@@ -320,20 +322,25 @@
 
 .footer {
     display: grid;
+    width: 100%;
     height: 80px;
     align-items: center;
     background-color: black;
     color: white;
+    position: absolute;
+    bottom: 0;
     grid-template-areas: 
     "listen-online escucha social-media";
 
     .listen-online {
         grid-template-areas: listen-online;
         display: flex;
+        position: relative;
         justify-content: center;
         background-color: gold;
-        padding: 28px;
+        padding: 18px;
         color: black; 
+      
         
                 .fa-solid  {
                 font-size: 1.5em;
