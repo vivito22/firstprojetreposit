@@ -1,6 +1,7 @@
 /*tipografias*/
 /*BODY - HEADER*/
 .navbar {
+  max-width: 100;
   background-color: black;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -235,7 +236,7 @@ body h1 {
   display: flex;
   justify-content: center;
   background-color: gold;
-  padding: 18px;
+  padding: 26px;
   color: black;
 }
 .footer .listen-online .fa-solid {
@@ -275,12 +276,12 @@ body h1 {
 
 body {
   width: 100%;
-  height: 100%;
-  margin: 0%;
+  height: 100vh;
+  margin: 0;
   background-image: url(../img/flowers-interior-room-home.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center;
 }
 
 /*TITULOS Y PARRAFOS*/
@@ -339,6 +340,7 @@ p {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  stroke: aliceblue;
 }
 
 .imagen1 {

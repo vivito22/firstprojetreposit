@@ -31,7 +31,7 @@
 
       .navbar .menu {
         position: fixed;
-        width: 80%;
+        width: 70%;
         height: 70vh;
         display: grid;
         align-items: center;
@@ -50,7 +50,7 @@
 
       .navbar .menu li a{
           line-height: 1em;
-          padding-left: 0;
+          
       }
 
 /*SECTION CONTAINER*/
