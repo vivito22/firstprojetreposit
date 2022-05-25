@@ -1,12 +1,19 @@
 @media only screen and (min-width: 468px) and (max-width: 768px){
 
    
-
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+          
+        
+    }
+    
 
 /*SECTION NAV*/
     .navbar {
         background-color: black;
-        position: relative;
+        position: fixed
       }
 
     .navbar .wa {
@@ -23,41 +30,31 @@
       
 
       .navbar .menu {
-        position: absolute;
-        width: 100%;
+        position: fixed;
+        width: 80%;
         height: 70vh;
         display: grid;
         align-items: center;
         background-color: black;
-        transform: translateX(160%);
+        transform: translateX(150%);
         transition: all 1s;
-        margin-top: 40em;
+        margin-top: 42em;
         z-index: 1;
       } 
 
       .navbar .menu-toggle {
           transform: translateX(50%);
+          cursor: pointer;
 
       }
 
+      .navbar .menu li a{
+          line-height: 1em;
+          padding-left: 0;
+      }
+
 /*SECTION CONTAINER*/
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    
-}
 
-.hero {
- display: flex;
- flex-direction: column;
- align-items: center;
- min-height: 100vh;
- flex-wrap: wrap;
-
-}
 
 .titleIndex {
         font-size: 68px;
@@ -66,7 +63,7 @@ body {
 
 /* FOOTER*/
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     align-self: flex-end;
 }
@@ -85,10 +82,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: static;
     margin-bottom: 0;
-   
+    
 }   
+
+/* CONTACTO*/
+
+.form {
+    justify-content: center;
+    align-items: center;
+
+            
+    }
+
+
+
 
 }   
 

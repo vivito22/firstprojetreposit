@@ -1,22 +1,16 @@
 /*MAIN - CONTAINERS*/
 
 
-@mixin contenedor {
-    height: 87vh;
-    background-image: url(../img/flowers-interior-room-home.jpg);
-    background-size: cover;
-    max-width:100% ;
-    display: grid;
-}
 
 @mixin boxes {
     background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc6704);
     text-align: center;
     border-radius: 10px;
-    width: 330px;
-    height: 470px;
-    margin-top: 200px;
-     
+    width: 200px;
+    margin-top: 80px;
+    margin-bottom: 280px;
+    background-size: cover;
+         
 }
 
 @mixin boxeshover {
@@ -29,13 +23,11 @@
 }
 
 
-
 .hero {
+    margin-top: auto;
     width: 100%;
-    height: 96vh;
+    height: 88vh;
     background-image: linear-gradient(90deg, rgba(6,6,6,0.6839110644257703) 0%, rgba(101,101,101,0.29735644257703087) 91%, rgba(144,144,144,0.36738445378151263) 100%);
-    position: relative;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +53,6 @@
 }
 
 
-
 .back-video{
         position: absolute;
         right: 0;
@@ -69,9 +60,6 @@
         z-index: -1;
     
 }
-
-
-
 
 
 .infoContent {
@@ -102,8 +90,6 @@
 
 
 
-
-
 .btn-centro {
     display: grid;
     place-content: center; 
@@ -111,22 +97,23 @@
 
 
 
-
-
-
-
-
-
 //SERVICIOS //
+body {
+    h1 {
+        text-align: center;
+    }
+}
+
 
 .grid-box {
-    height: 87vh;
-    background-image: url(../img/flowers-interior-room-home.jpg);
-    background-size: cover;
-    max-width:100% ;
     display: flex;
-    justify-content: center;
-    align-items: stretch;    
+    justify-content: space-evenly;
+    align-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 87vh;
+    max-width:100% ;
+ 
     
         .box1{
            @include boxes ();
@@ -192,127 +179,23 @@
 }
    
 
-//NOSOTROS //
+   
+//PORTFOLIO y FORMULARIO//
 
-   .grid-nosotros {
-    @include contenedor ();
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat( 4,1fr);
-    gap: 16px 16px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "persona1 persona2 persona3 persona4";
-    grid-area: grid-nosotros;
-    position: relative;
-    
-        .persona1{
-            grid-area: persona1;
-            @include boxes() ;
-            grid-column: 3 / 5;
-            grid-row: 2;
-
-            &:hover {
-            @include boxeshover();              
-
-            .persona1:active {
-                    transform: translateY(3px);
-                }
-                
-            }
-        }
-    
-        .persona2{
-            grid-area: persona2;
-            @include boxes() ;
-            grid-column: 5 / 7;
-            grid-row: 2;
-
-            &:hover {
-            @include boxeshover();              
-
-            .persona2:active {
-                    transform: translateY(3px);
-                }
-                
-            }
-        }
-
-        .persona3{
-            grid-area: persona3;
-            @include boxes() ;
-            grid-column: 3 / 5;
-            grid-row: 3;
-
-            &:hover {
-            @include boxeshover();              
-
-            .persona3:active {
-                    transform: translateY(3px);
-                }
-                
-            }
-        }
-
-        .persona4{
-            grid-area: persona4;
-            @include boxes() ;
-            grid-column: 5 / 7 ;
-            grid-row: 3;
-
-            &:hover {
-            @include boxeshover();              
-
-            .persona4:active {
-                    transform: translateY(3px);
-                }
-                
-            }
-        }
-
-
-
-
-
-    }
-//PORTFOLIO//
-
-.grid-portfolio {
-    @include contenedor();
-    grid-template-columns: repeat(9,1fr);
-    grid-auto-flow: row;
-    position: relative;
-
-    .portfolio {
-        grid-column: 3 / 7;
-        grid-row: 2 / 4;
-
-        .row {
-            text-align: center;
-            background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc6704);
-
-
-        }
-    
-    }
-
-}
-
-//FORM //
 
 .grid-form {
-    @include contenedor();
-    grid-template-columns: repeat(9,1fr);
-    grid-auto-flow: row;
-    position: relative;
+    height: 87vh;
+    max-width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 150px;
 
-    .form {
-        grid-column: 4 / 7;
-        grid-row: 2 / 4;
+
+    .form {     
 
         .row {
             background-image: linear-gradient(to top right, #fbd34c, #fa9905, #ffdc6704);
-
-
         }
     
     }
@@ -323,12 +206,12 @@
 
 .footer {
     display: grid;
+    position: fixed;
     width: 100%;
     height: 80px;
     align-items: center;
     background-color: black;
     color: white;
-    position: absolute;
     bottom: 0;
     grid-template-areas: 
     "listen-online escucha social-media";
