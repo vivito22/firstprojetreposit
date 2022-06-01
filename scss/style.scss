@@ -10,13 +10,21 @@
 
 $margin: 0;
 $padding: 0;
-$box-sizing: border-box;
+
 
 
 
 
 body {
     margin: 0;
+    height: 100;
+    width: 100;
+    background-image: url(../img/flowers-interior-room-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width:100 ;
+
 }
 
 /*TITULOS Y PARRAFOS*/
@@ -28,7 +36,6 @@ h1 {
     font-family: sans-serif;
     color: white;
     font-size: 2rem;
-    font-weight: 300;
     text-align: center;
     
 
@@ -59,7 +66,6 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    font-weight: 300;
     text-align: center;
     color: white;
     text-shadow: -2px -2px 2px rgb(26, 24, 24); 
